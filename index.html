@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+        integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---------cueerent date and time details---------->
+    <div class="dateandtime">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    -- -- <span id="am-pm">--</span>
+                </div>
+                <div class="date" id="date">
+                    ------ -- ---
+                </div>
+                <div class="info-box" id="current-weather-items">
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="box">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search for a city..." />
+                <button id="search-button">Search</button>
+            </div>
+            <div class="animation-container">
+                <div class="animation">
+                    <div class="clouds">
+
+                    </div>
+                    <div class="rain">
+
+                    </div>
+                    <div class="clear-sky">
+                        <div class="sun">
+
+                        </div>
+                    </div>
+                    <div class="cloudy-sky">
+                        <div class="cloudy">
+                            <div class="cloud cloud-layer-1"></div>
+                            <div class="cloud cloud-layer-2"></div>
+                            <div class="cloud cloud-layer-3"></div>
+                            <div class="cloud cloud-layer-1" style="animation-delay: 3s;"></div>
+                            <div class="cloud cloud-layer-2" style="animation-delay: 6s;"></div>
+                            <div class="cloud cloud-layer-3" style="animation-delay: 9s;"></div>
+                            <div class="cloud cloud-layer-1" style="top: 20%;"></div>
+                            <div class="cloud cloud-layer-2" style="top: 40%;"></div>
+                            <div class="cloud cloud-layer-3" style="top: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="snowfall-container">
+                        <div class="snowfall">
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                        </div>
+                        <div class="snowfall">
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                        </div>
+                        <div class="snowfall">
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                        </div>
+                        <div class="snowfall">
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                        </div>
+                        <div class="snow-covered"></div>
+
+                    </div>
+
+                    <div class="fog">
+                        <div class="fog-layer layer1"></div>
+                        <div class="fog-layer layer2"></div>
+                        <div class="fog-layer layer3"></div>
+                        <div class="fog-layers layer4"></div>
+                        <div class="fog-layers layer5"></div>
+                        <div class="fog-layers layer6"></div>
+                    </div>
+                    <div class="tornado">
+                        
+                            <div class="circle cirkel1"></div>
+                            <div class="circle cirkel2"></div>
+                            <div class="circle cirkel3"></div>
+                            <div class="circle cirkel4"></div>
+                            <div class="circle cirkel5"></div>
+                        
+                    </div>
+                   
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="place-container" id="placename">
+            <div class="timezone" id="timezone">
+                GETINOS
+            </div>
+            <div class="description">
+                xxx xxx xxx
+            </div>
+        </div>
+
+
+        <!---------week forcast---------->
+        <div class="week-weather" ID="week-weather">
+            <div class="today" id="currten-temp">
+                <div class="others">
+                    <div class="day">monday</div>
+                    <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+                    <div class="temp">temp : -- -- -- </div>
+                    <div class="temp">max-temp : -- -- --</div>
+                    <div class="temp">feels-like: -- -- --</div>
+                </div>
+
+            </div>
+            <div class="forcast" id="forcast">
+
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
